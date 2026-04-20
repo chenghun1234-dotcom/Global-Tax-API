@@ -1,0 +1,88 @@
+{
+  "last_updated": "2024-04-20",
+  "regions": {
+    "US": {
+      "name": "United States",
+      "currency": "USD",
+      "states": {
+        "AL": { "name": "Alabama", "rate": 0.04, "threshold_revenue": 250000, "threshold_transactions": null, "digital_taxable": true },
+        "AK": { "name": "Alaska", "rate": 0.0, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": false },
+        "AZ": { "name": "Arizona", "rate": 0.056, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "AR": { "name": "Arkansas", "rate": 0.065, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "CA": { "name": "California", "rate": 0.0725, "threshold_revenue": 500000, "threshold_transactions": null, "digital_taxable": false },
+        "CO": { "name": "Colorado", "rate": 0.029, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "CT": { "name": "Connecticut", "rate": 0.0635, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "DE": { "name": "Delaware", "rate": 0.0, "threshold_revenue": 0, "threshold_transactions": 0, "digital_taxable": false },
+        "FL": { "name": "Florida", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": false },
+        "GA": { "name": "Georgia", "rate": 0.04, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "HI": { "name": "Hawaii", "rate": 0.04, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "ID": { "name": "Idaho", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "IL": { "name": "Illinois", "rate": 0.0625, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "IN": { "name": "Indiana", "rate": 0.07, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "IA": { "name": "Iowa", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "KS": { "name": "Kansas", "rate": 0.065, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "KY": { "name": "Kentucky", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "LA": { "name": "Louisiana", "rate": 0.0445, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "ME": { "name": "Maine", "rate": 0.055, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "MD": { "name": "Maryland", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "MA": { "name": "Massachusetts", "rate": 0.0625, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "MI": { "name": "Michigan", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "MN": { "name": "Minnesota", "rate": 0.06875, "threshold_revenue": 100000, "threshold_transactions": 10, "digital_taxable": true },
+        "MS": { "name": "Mississippi", "rate": 0.07, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "MO": { "name": "Missouri", "rate": 0.04225, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": false },
+        "MT": { "name": "Montana", "rate": 0.0, "threshold_revenue": 0, "threshold_transactions": 0, "digital_taxable": false },
+        "NE": { "name": "Nebraska", "rate": 0.055, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "NV": { "name": "Nevada", "rate": 0.0685, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": false },
+        "NH": { "name": "New Hampshire", "rate": 0.0, "threshold_revenue": 0, "threshold_transactions": 0, "digital_taxable": false },
+        "NJ": { "name": "New Jersey", "rate": 0.06625, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "NM": { "name": "New Mexico", "rate": 0.05125, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "NY": { "name": "New York", "rate": 0.04, "threshold_revenue": 500000, "threshold_transactions": 100, "digital_taxable": true },
+        "NC": { "name": "North Carolina", "rate": 0.0475, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "ND": { "name": "North Dakota", "rate": 0.05, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "OH": { "name": "Ohio", "rate": 0.0575, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "OK": { "name": "Oklahoma", "rate": 0.045, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": false },
+        "OR": { "name": "Oregon", "rate": 0.0, "threshold_revenue": 0, "threshold_transactions": 0, "digital_taxable": false },
+        "PA": { "name": "Pennsylvania", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "RI": { "name": "Rhode Island", "rate": 0.07, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "SC": { "name": "South Carolina", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": false },
+        "SD": { "name": "South Dakota", "rate": 0.045, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "TN": { "name": "Tennessee", "rate": 0.07, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "TX": { "name": "Texas", "rate": 0.0625, "threshold_revenue": 500000, "threshold_transactions": null, "digital_taxable": true },
+        "UT": { "name": "Utah", "rate": 0.0485, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "VT": { "name": "Vermont", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "VA": { "name": "Virginia", "rate": 0.043, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": false },
+        "WA": { "name": "Washington", "rate": 0.065, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "WV": { "name": "West Virginia", "rate": 0.06, "threshold_revenue": 100000, "threshold_transactions": 200, "digital_taxable": true },
+        "WI": { "name": "Wisconsin", "rate": 0.05, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true },
+        "WY": { "name": "Wyoming", "rate": 0.04, "threshold_revenue": 100000, "threshold_transactions": null, "digital_taxable": true }
+      }
+    },
+    "EU": {
+      "name": "European Union",
+      "currency": "EUR",
+      "standard_rate": 0.21,
+      "threshold": 0,
+      "rules": {
+        "b2c_digital": "Register via Non-Union OSS. Zero threshold for non-EU sellers.",
+        "b2b_reverse_charge": true
+      }
+    },
+    "JP": {
+      "name": "Japan",
+      "currency": "JPY",
+      "rate": 0.1,
+      "threshold_revenue": 10000000,
+      "invoice_system": "Qualified Invoice Issuer system requires registration for B2B tax credits."
+    },
+    "KR": {
+      "name": "South Korea",
+      "currency": "KRW",
+      "rate": 0.1,
+      "threshold_revenue": 0,
+      "rules": {
+        "b2c_digital": "Simplified VAT registration (HomeTax) required from first sale.",
+        "b2b_reverse_charge": true
+      }
+    }
+  }
+}

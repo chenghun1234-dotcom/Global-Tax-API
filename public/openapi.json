@@ -1,0 +1,117 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Global Tax & VAT API",
+    "description": "Deterministic tax compliance engine for global SaaS. Supports 50 US States, EU VAT (OSS), Japan (JCT), and South Korea. Includes nexus detection and action requirements.\n\n### Pricing Tiers:\n- **Free**: 10 calls/month\n- **Pro**: 1,000 calls/month ($19/mo)\n- **Ultra**: 100,000 calls/month ($99/mo)",
+    "version": "1.0.0",
+    "x-badges": [
+      { "name": "Compliance", "value": "Global" },
+      { "name": "Edge", "value": "High Performance" }
+    ]
+  },
+  "servers": [
+    { "url": "/api", "description": "Native Next.js API Server" }
+  ],
+  "paths": {
+    "/lookup": {
+      "get": {
+        "summary": "Check Tax Rate",
+        "operationId": "lookupRate",
+        "description": "Retrieves the standard VAT/Sales Tax rate for a specific location.",
+        "parameters": [
+          {
+            "name": "country",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string", "example": "US" },
+            "description": "ISO Alpha-2 country code"
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "string", "example": "CA" },
+            "description": "US State code (required for country=US)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Tax rate found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "country": { "type": "string" },
+                    "state": { "type": "string" },
+                    "rate": { "type": "number" },
+                    "last_updated": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calculate": {
+      "post": {
+        "summary": "Full Compliance Calculation",
+        "operationId": "calculateCompliance",
+        "description": "Calculates tax and checks nexus triggers based on annual sales volume.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "buyer_loc": { "type": "string", "example": "JP" },
+                  "buyer_state": { "type": "string" },
+                  "amount": { "type": "number", "example": 25000 },
+                  "annual_sales": { "type": "number", "example": 12000000 },
+                  "product_type": { "type": "string", "enum": ["digital_service", "physical_good"], "default": "digital_service" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Calculation complete",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": { "type": "string" },
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "tax_amount": { "type": "number" },
+                        "currency": { "type": "string" },
+                        "nexus_hit": { "type": "boolean" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      }
+    }
+  },
+  "security": [
+    { "ApiKeyAuth": [] }
+  ]
+}
