@@ -234,7 +234,7 @@ export default function GlobalTaxDashboard() {
                 Edge Distributed
               </h3>
               <p className="text-sm text-slate-400 leading-relaxed">
-                Deployed via Cloudflare Workers. Sub-millisecond tax lookups from 250+ global edge locations. Zero latency for your checkout.
+                Deployed via Serverless Edge. Sub-millisecond tax lookups from 250+ global edge locations. Zero latency for your checkout.
               </p>
             </div>
 
