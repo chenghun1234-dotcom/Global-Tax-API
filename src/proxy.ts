@@ -18,8 +18,8 @@ export function proxy(request: NextRequest) {
   const apiKey = request.headers.get('X-API-Key') || request.headers.get('X-RapidAPI-Key');
   const path = request.nextUrl.pathname;
 
-  // Only protect /api routes
-  if (path.startsWith('/api/') && !apiKey) {
+  // Only protect /api routes (except /api/health)
+  if (path.startsWith('/api/') && !path.startsWith('/api/health') && !apiKey) {
     return new NextResponse(
       JSON.stringify({ 
         error: 'Unauthorized', 
